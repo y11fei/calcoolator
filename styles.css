@@ -27,7 +27,7 @@ h1 {
     display: grid;
     justify-content: center;
     align-content: center;
-    min-height: 100vh;
+    margin-top: 30px;
     grid-template-columns: repeat(4, 120px);
     grid-template-rows:  minmax(120px, auto)  repeat(5, 120px);
 }
@@ -50,31 +50,37 @@ button {
     grid-template-columns: repeat(1, 240px) minmax(240px, auto);
     height: 50px;
     justify-content: center;
-    margin: -30px 0px;
+    margin: 10px 0px;
     padding: 0px 0px;
-    z-index: 100;
+    /* z-index: 300; */
+    margin-bottom: -30px;
 }
+
 .container {
-    display: flex;
+    display: grid;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    justify-items: center;
+    align-content: stretch;
+    max-height: auto;
 }
 
 
 .display {
     background-color: rgb(195, 195, 195);
-    width: 480px;
-    height: 80px;
+    width: 475px;
+    min-height: 80px;
+    max-height: auto;
     margin: 0 32%;
-    z-index: 500;
-    margin-bottom: 30px;
+    margin-bottom: -10px;
     border: 1px solid rgb(119, 119, 119, 0.5);
     padding: 10px 2px;
     display: flex;
     align-items: flex-end;
     flex-direction: column;
     justify-content: space-between;
+    word-wrap: break-word;
+
 }
 
 .previous, .current {
